@@ -1,0 +1,11 @@
+{
+  "name": "bump-types",
+  "version": "0.1.0",
+  "description": "Type declarations of [bump.lua](https://github.com/kikito/bump.lua)",
+  "author": "Nyaacinth",
+  "license": "MIT",
+  "types": "./index.d.ts",
+  "dependencies": {
+    "lua-types": "^2.11.0"
+  }
+}
