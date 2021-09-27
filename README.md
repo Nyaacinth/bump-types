@@ -29,8 +29,12 @@ import * as bump from "bump"
 let world = bump.newWorld(32)
 ```
 
-Make sure to append ";./node_modules/?/?.lua" to your package.path in a conf.ts file (this is run first) to assist where Lua looks for modules. (for love2d you can just insert this to *conf.ts*)
+Make sure to append ";./node_modules/?/?.lua" to your package.path to assist where Lua looks for modules. (for love2d you will need to do this with [`love.filesystem.setRequirePath`](https://love2d.org/wiki/love.filesystem.setRequirePath))
 
 ```typescript
 package.path += ";./node_modules/?/?.lua"
+
+// ... or in love2d (main.ts, conf.ts won't work):
+
+love.filesystem.setRequirePath(love.filesystem.getRequirePath() + ";node_modules/?/?.lua")
 ```
