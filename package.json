@@ -1,11 +1,12 @@
 {
   "name": "bump-types",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Type declarations of bump.lua",
   "author": "Nyaacinth",
   "license": "MIT",
   "types": "./index.d.ts",
   "dependencies": {
-    "lua-types": "^2.11.0"
+    "lua-types": "^2.11.0",
+    "typescript-to-lua": "^1.0.1"
   }
 }

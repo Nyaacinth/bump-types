@@ -7,7 +7,7 @@ Type declarations of [bump.lua](https://github.com/kikito/bump.lua), a collision
 | Command | Description |
 |-|-|
 |`yarn add -D bump-types`| Install this declaration |
-|`yarn add bump@git+https://github.com/kikito/bump.lua.git`| Install bump.lua as "bump" |
+|`yarn add bump@kikito/bump.lua`| Install bump |
 
 Upon installation this declaration package can be linked to a *tsconfig.json* file.
 
