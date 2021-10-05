@@ -1,8 +1,5 @@
-/// <reference path="./BumpWorld.d.ts"/>
-
 /** @noResolution */
 declare module "bump" {
-
     /**
      * bump.lua
      * @description Lua collision-detection library for axis-aligned rectangles
@@ -17,7 +14,7 @@ declare module "bump" {
          * @param cell_size An optional number defaults to 64, representing the size of the sides of the (squared) cells that will be used internally to provide the data
          * @noSelf
          */
-        function newWorld(cell_size?: number): BumpWorld
+        function newWorld(cell_size?: number): import("./BumpWorld").IBumpWorld
     }
 
     export = bump

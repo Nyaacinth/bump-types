@@ -1,5 +1,5 @@
 /** Detailed info returned by `BumpWorld.querySegmentWithCoords` */
-type BumpBulletInfo = {
+export type BumpBulletInfo = {
     /** The item being intersected by the segment */
     item: unknown
 

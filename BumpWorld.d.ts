@@ -1,9 +1,9 @@
-/// <reference path="./BumpBulletInfo.d.ts"/>
-/// <reference path="./BumpCollisionFilter.d.ts"/>
-/// <reference path="./BumpCollisionInfo.d.ts"/>
+import {BumpBulletInfo} from "./BumpBulletInfo"
+import {BumpCollisionFilter} from "./BumpCollisionFilter"
+import {BumpCollisionInfo} from "./BumpCollisionInfo"
 
 /** Bump Collision World */
-interface BumpWorld {
+export interface IBumpWorld {
     /**
      * Insert a new item to the world
      * @param item Anything that matters to your collision, usually a game object or unique id

@@ -1,5 +1,5 @@
 /** Bump Collision Info */
-type BumpCollisionInfo = {
+export type BumpCollisionInfo = {
     /** The item being moved / checked */
     item: unknown
 
