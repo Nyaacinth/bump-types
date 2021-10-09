@@ -230,3 +230,5 @@ export interface IBumpWorld {
         filter?: BumpCollisionFilter
     ): LuaMultiReturn<[colliables: BumpCollisionInfo[], colliables_number: number]>
 }
+
+export type BumpWorld = IBumpWorld

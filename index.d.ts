@@ -14,7 +14,7 @@ declare module "bump" {
          * @param cell_size An optional number defaults to 64, representing the size of the sides of the (squared) cells that will be used internally to provide the data
          * @noSelf
          */
-        function newWorld(cell_size?: number): import("./BumpWorld").IBumpWorld
+        function newWorld(cell_size?: number): import("./BumpWorld").BumpWorld
     }
 
     export = bump
