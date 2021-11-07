@@ -41,18 +41,18 @@ export interface IBumpWorld {
      * ```text
      * actual_x: The coordinates where the object ended up after colliding with other objects (X-axis)
      * actual_y: The coordinates where the object ended up after colliding with other objects (Y-axis)
-     * colliables: An array of all the collisions that were detected, Each collision is a table
-     *             The most important item in this table is `colliables[index: number].other`, which points to the item that collided with item
-     * colliables_number: The amount of collisions produced, equivalent to colliables.length
+     * collidables: An array of all the collisions that were detected, Each collision is a table
+     *             The most important item in this table is `collidables[index: number].other`, which points to the item that collided with item
+     * collidables_number: The amount of collisions produced, equivalent to collidables.length
      * ```
-     * @see `colliables` [Collision info](https://github.com/kikito/bump.lua#collision-info)
+     * @see `collidables` [Collision info](https://github.com/kikito/bump.lua#collision-info)
      */
     move(
         item: any,
         goal_x: number,
         goal_y: number,
         filter?: BumpCollisionFilter
-    ): LuaMultiReturn<[actual_x: number, actual_y: number, colliables: BumpCollisionInfo[], colliables_number: number]>
+    ): LuaMultiReturn<[actual_x: number, actual_y: number, collidables: BumpCollisionInfo[], collidables_number: number]>
 
     /**
      * Checking for collisions without moving
@@ -64,18 +64,18 @@ export interface IBumpWorld {
      * ```text
      * actual_x: The coordinates where the object ended up after colliding with other objects (X-axis)
      * actual_y: The coordinates where the object ended up after colliding with other objects (Y-axis)
-     * colliables: An array of all the collisions that were detected, Each collision is a table
-     *             The most important item in this table is `colliables[index: number].other`, which points to the item that collided with item
-     * colliables_number: The amount of collisions produced, equivalent to colliables.length
+     * collidables: An array of all the collisions that were detected, Each collision is a table
+     *             The most important item in this table is `collidables[index: number].other`, which points to the item that collided with item
+     * collidables_number: The amount of collisions produced, equivalent to collidables.length
      * ```
-     * @see `colliables` [Collision info](https://github.com/kikito/bump.lua#collision-info)
+     * @see `collidables` [Collision info](https://github.com/kikito/bump.lua#collision-info)
      */
     check(
         item: any,
         goal_x: number,
         goal_y: number,
         filter?: BumpCollisionFilter
-    ): LuaMultiReturn<[actual_x: number, actual_y: number, colliables: BumpCollisionInfo[], colliables_number: number]>
+    ): LuaMultiReturn<[actual_x: number, actual_y: number, collidables: BumpCollisionInfo[], collidables_number: number]>
 
     /**
      * Querying with a point
@@ -213,11 +213,11 @@ export interface IBumpWorld {
      * ```text
      * actual_x: The coordinates where the object ended up after colliding with other objects (X-axis)
      * actual_y: The coordinates where the object ended up after colliding with other objects (Y-axis)
-     * colliables: An array of all the collisions that were detected, Each collision is a table
-     *             The most important item in this table is `colliables[index: number].other`, which points to the item that collided with item
-     * colliables_number: The amount of collisions produced, equivalent to colliables.length
+     * collidables: An array of all the collisions that were detected, Each collision is a table
+     *             The most important item in this table is `collidables[index: number].other`, which points to the item that collided with item
+     * collidables_number: The amount of collisions produced, equivalent to collidables.length
      * ```
-     * @see `colliables` [Collision info](https://github.com/kikito/bump.lua#collision-info)
+     * @see `collidables` [Collision info](https://github.com/kikito/bump.lua#collision-info)
      */
     project(
         item: any,
@@ -228,7 +228,7 @@ export interface IBumpWorld {
         goal_x: number,
         goal_y: number,
         filter?: BumpCollisionFilter
-    ): LuaMultiReturn<[colliables: BumpCollisionInfo[], colliables_number: number]>
+    ): LuaMultiReturn<[collidables: BumpCollisionInfo[], collidables_number: number]>
 }
 
 export type BumpWorld = IBumpWorld

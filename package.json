@@ -1,6 +1,6 @@
 {
   "name": "bump-types",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Type declarations of bump.lua",
   "author": "Nyaacinth",
   "license": "MIT",
